@@ -6,16 +6,16 @@ players A, B, C         # ERROR 2: tres jugadores, solo se permiten dos
 
 strategies
     A: Cooperate, defect  # ERROR 3: estrategia empieza en mayúscula (debería ser STRATEGY_ID)
-    B: cooperate          # ERROR 4: falta al menos definir más de una estrategia... depende de tu gramática
+    B: cooperate          # ERROR 4: falta al menos definir más de una estrategia
 
 payoffs
-    A cooperate, B cooperate : (3, 3)
-    A cooperate, B defect    : (0, 5)
-    A defect,    B cooperate : (5, 0)
+    A cooperate, B cooperate : 3, 3
+    A cooperate, B defect    : 0, 5
+    A defect,    B cooperate : 5, 0
                               # ERROR 5: falta el último payoff
 
 analyze
-    nash()
-    dominant()
-    unknown()             # ERROR 6: comando no existe en la gramática
-    simulate -5   # ERROR 7: número negativo (si lo validás en el visitor)
+    nash
+    dominant
+    unknown             # ERROR 6: comando no existe en la gramática
+    simulate -5   # ERROR 7: número negativo

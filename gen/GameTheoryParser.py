@@ -10,28 +10,28 @@ else:
 
 def serializedATN():
     return [
-        4,1,21,73,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,19,71,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,
         1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,3,2,38,8,2,1,3,1,3,1,3,1,3,3,3,44,
-        8,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,5,
-        1,5,3,5,62,8,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,3,6,71,8,6,1,6,0,0,7,
-        0,2,4,6,8,10,12,0,0,73,0,14,1,0,0,0,2,29,1,0,0,0,4,37,1,0,0,0,6,
-        43,1,0,0,0,8,45,1,0,0,0,10,61,1,0,0,0,12,70,1,0,0,0,14,15,5,1,0,
-        0,15,16,5,17,0,0,16,17,5,2,0,0,17,18,5,16,0,0,18,19,5,12,0,0,19,
-        20,5,16,0,0,20,21,5,3,0,0,21,22,3,2,1,0,22,23,3,2,1,0,23,24,5,4,
-        0,0,24,25,3,6,3,0,25,26,5,5,0,0,26,27,3,10,5,0,27,28,5,0,0,1,28,
-        1,1,0,0,0,29,30,5,16,0,0,30,31,5,13,0,0,31,32,3,4,2,0,32,3,1,0,0,
-        0,33,34,5,18,0,0,34,35,5,12,0,0,35,38,3,4,2,0,36,38,5,18,0,0,37,
-        33,1,0,0,0,37,36,1,0,0,0,38,5,1,0,0,0,39,40,3,8,4,0,40,41,3,6,3,
-        0,41,44,1,0,0,0,42,44,1,0,0,0,43,39,1,0,0,0,43,42,1,0,0,0,44,7,1,
-        0,0,0,45,46,5,16,0,0,46,47,5,18,0,0,47,48,5,12,0,0,48,49,5,16,0,
-        0,49,50,5,18,0,0,50,51,5,13,0,0,51,52,5,14,0,0,52,53,5,19,0,0,53,
-        54,5,12,0,0,54,55,5,19,0,0,55,56,5,15,0,0,56,9,1,0,0,0,57,58,3,12,
-        6,0,58,59,3,10,5,0,59,62,1,0,0,0,60,62,1,0,0,0,61,57,1,0,0,0,61,
-        60,1,0,0,0,62,11,1,0,0,0,63,71,5,6,0,0,64,71,5,7,0,0,65,71,5,8,0,
-        0,66,71,5,9,0,0,67,71,5,10,0,0,68,69,5,11,0,0,69,71,5,19,0,0,70,
-        63,1,0,0,0,70,64,1,0,0,0,70,65,1,0,0,0,70,66,1,0,0,0,70,67,1,0,0,
-        0,70,68,1,0,0,0,71,13,1,0,0,0,4,37,43,61,70
+        8,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,5,1,5,3,5,
+        60,8,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,3,6,69,8,6,1,6,0,0,7,0,2,4,6,
+        8,10,12,0,0,71,0,14,1,0,0,0,2,29,1,0,0,0,4,37,1,0,0,0,6,43,1,0,0,
+        0,8,45,1,0,0,0,10,59,1,0,0,0,12,68,1,0,0,0,14,15,5,1,0,0,15,16,5,
+        15,0,0,16,17,5,2,0,0,17,18,5,14,0,0,18,19,5,12,0,0,19,20,5,14,0,
+        0,20,21,5,3,0,0,21,22,3,2,1,0,22,23,3,2,1,0,23,24,5,4,0,0,24,25,
+        3,6,3,0,25,26,5,5,0,0,26,27,3,10,5,0,27,28,5,0,0,1,28,1,1,0,0,0,
+        29,30,5,14,0,0,30,31,5,13,0,0,31,32,3,4,2,0,32,3,1,0,0,0,33,34,5,
+        16,0,0,34,35,5,12,0,0,35,38,3,4,2,0,36,38,5,16,0,0,37,33,1,0,0,0,
+        37,36,1,0,0,0,38,5,1,0,0,0,39,40,3,8,4,0,40,41,3,6,3,0,41,44,1,0,
+        0,0,42,44,1,0,0,0,43,39,1,0,0,0,43,42,1,0,0,0,44,7,1,0,0,0,45,46,
+        5,14,0,0,46,47,5,16,0,0,47,48,5,12,0,0,48,49,5,14,0,0,49,50,5,16,
+        0,0,50,51,5,13,0,0,51,52,5,17,0,0,52,53,5,12,0,0,53,54,5,17,0,0,
+        54,9,1,0,0,0,55,56,3,12,6,0,56,57,3,10,5,0,57,60,1,0,0,0,58,60,1,
+        0,0,0,59,55,1,0,0,0,59,58,1,0,0,0,60,11,1,0,0,0,61,69,5,6,0,0,62,
+        69,5,7,0,0,63,69,5,8,0,0,64,69,5,9,0,0,65,69,5,10,0,0,66,67,5,11,
+        0,0,67,69,5,17,0,0,68,61,1,0,0,0,68,62,1,0,0,0,68,63,1,0,0,0,68,
+        64,1,0,0,0,68,65,1,0,0,0,68,66,1,0,0,0,69,13,1,0,0,0,4,37,43,59,
+        68
     ]
 
 class GameTheoryParser ( Parser ):
@@ -46,14 +46,12 @@ class GameTheoryParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'game'", "'players'", "'strategies'", 
                      "'payoffs'", "'analyze'", "'nash'", "'dominant'", "'pareto'", 
-                     "'minimax'", "'maximin'", "'simulate'", "','", "':'", 
-                     "'('", "')'" ]
+                     "'minimax'", "'maximin'", "'simulate'", "','", "':'" ]
 
     symbolicNames = [ "<INVALID>", "GAME", "PLAYERS", "STRATEGIES", "PAYOFFS", 
                       "ANALYZE", "NASH", "DOMINANT", "PARETO", "MINIMAX", 
-                      "MAXIMIN", "SIMULATE", "COMMA", "COLON", "LPAREN", 
-                      "RPAREN", "PLAYER_ID", "GAME_ID", "STRATEGY_ID", "NUMBER", 
-                      "WS", "COMMENT" ]
+                      "MAXIMIN", "SIMULATE", "COMMA", "COLON", "PLAYER_ID", 
+                      "GAME_ID", "STRATEGY_ID", "NUMBER", "WS", "COMMENT" ]
 
     RULE_program = 0
     RULE_strategy = 1
@@ -80,14 +78,12 @@ class GameTheoryParser ( Parser ):
     SIMULATE=11
     COMMA=12
     COLON=13
-    LPAREN=14
-    RPAREN=15
-    PLAYER_ID=16
-    GAME_ID=17
-    STRATEGY_ID=18
-    NUMBER=19
-    WS=20
-    COMMENT=21
+    PLAYER_ID=14
+    GAME_ID=15
+    STRATEGY_ID=16
+    NUMBER=17
+    WS=18
+    COMMENT=19
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -385,7 +381,7 @@ class GameTheoryParser ( Parser ):
             self.state = 43
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [16]:
+            if token in [14]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 39
                 self.payoff()
@@ -436,17 +432,11 @@ class GameTheoryParser ( Parser ):
         def COLON(self):
             return self.getToken(GameTheoryParser.COLON, 0)
 
-        def LPAREN(self):
-            return self.getToken(GameTheoryParser.LPAREN, 0)
-
         def NUMBER(self, i:int=None):
             if i is None:
                 return self.getTokens(GameTheoryParser.NUMBER)
             else:
                 return self.getToken(GameTheoryParser.NUMBER, i)
-
-        def RPAREN(self):
-            return self.getToken(GameTheoryParser.RPAREN, 0)
 
         def getRuleIndex(self):
             return GameTheoryParser.RULE_payoff
@@ -487,15 +477,11 @@ class GameTheoryParser ( Parser ):
             self.state = 50
             self.match(GameTheoryParser.COLON)
             self.state = 51
-            self.match(GameTheoryParser.LPAREN)
+            self.match(GameTheoryParser.NUMBER)
             self.state = 52
-            self.match(GameTheoryParser.NUMBER)
-            self.state = 53
             self.match(GameTheoryParser.COMMA)
-            self.state = 54
+            self.state = 53
             self.match(GameTheoryParser.NUMBER)
-            self.state = 55
-            self.match(GameTheoryParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -545,14 +531,14 @@ class GameTheoryParser ( Parser ):
         localctx = GameTheoryParser.CommandListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_commandList)
         try:
-            self.state = 61
+            self.state = 59
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [6, 7, 8, 9, 10, 11]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 57
+                self.state = 55
                 self.command()
-                self.state = 58
+                self.state = 56
                 self.commandList()
                 pass
             elif token in [-1]:
@@ -624,39 +610,39 @@ class GameTheoryParser ( Parser ):
         localctx = GameTheoryParser.CommandContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_command)
         try:
-            self.state = 70
+            self.state = 68
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [6]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 63
+                self.state = 61
                 self.match(GameTheoryParser.NASH)
                 pass
             elif token in [7]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 64
+                self.state = 62
                 self.match(GameTheoryParser.DOMINANT)
                 pass
             elif token in [8]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 65
+                self.state = 63
                 self.match(GameTheoryParser.PARETO)
                 pass
             elif token in [9]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 66
+                self.state = 64
                 self.match(GameTheoryParser.MINIMAX)
                 pass
             elif token in [10]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 67
+                self.state = 65
                 self.match(GameTheoryParser.MAXIMIN)
                 pass
             elif token in [11]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 68
+                self.state = 66
                 self.match(GameTheoryParser.SIMULATE)
-                self.state = 69
+                self.state = 67
                 self.match(GameTheoryParser.NUMBER)
                 pass
             else:

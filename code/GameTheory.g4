@@ -26,7 +26,7 @@ payoffList
     ;
 
 payoff
-    : PLAYER_ID STRATEGY_ID COMMA PLAYER_ID STRATEGY_ID COLON LPAREN NUMBER COMMA NUMBER RPAREN
+    : PLAYER_ID STRATEGY_ID COMMA PLAYER_ID STRATEGY_ID COLON NUMBER COMMA NUMBER
     ;
 
 commandList
@@ -61,8 +61,6 @@ SIMULATE   : 'simulate'   ;
 // Símbolos
 COMMA  : ','  ;
 COLON  : ':'  ;
-LPAREN : '('  ;
-RPAREN : ')'  ;
 
 // Tokens generales
 PLAYER_ID   : [A-Z]                     ;
