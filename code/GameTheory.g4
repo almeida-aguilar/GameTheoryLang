@@ -35,12 +35,12 @@ commandList
     ;
 
 command
-    : NASH     LPAREN RPAREN
-    | DOMINANT LPAREN RPAREN
-    | PARETO   LPAREN RPAREN
-    | MINIMAX  LPAREN RPAREN
-    | MAXIMIN  LPAREN RPAREN
-    | SIMULATE LPAREN ROUNDS EQUAL NUMBER RPAREN
+    : NASH
+    | DOMINANT
+    | PARETO
+    | MINIMAX
+    | MAXIMIN
+    | SIMULATE NUMBER
     ;
 
 // ===== Lexer =====
@@ -57,12 +57,10 @@ PARETO     : 'pareto'     ;
 MINIMAX    : 'minimax'    ;
 MAXIMIN    : 'maximin'    ;
 SIMULATE   : 'simulate'   ;
-ROUNDS     : 'rounds'     ;
 
 // Símbolos
 COMMA  : ','  ;
 COLON  : ':'  ;
-EQUAL  : '='  ;
 LPAREN : '('  ;
 RPAREN : ')'  ;
 

@@ -18,5 +18,4 @@ analyze
     nash()
     dominant()
     unknown()             # ERROR 6: comando no existe en la gramática
-    simulate(rounds=-5)   # ERROR 7: número negativo (si lo validás en el visitor)
-    simulate(rondas=10)   # ERROR 8: keyword equivocada, 'rondas' en vez de 'rounds'
+    simulate -5   # ERROR 7: número negativo (si lo validás en el visitor)

@@ -15,7 +15,7 @@ payoffs
     A defect,    B defect    : (1, 1)
 
 analyze
-    nash()
-    dominant()
-    pareto()
-    simulate(rounds=50)
+    nash
+    dominant
+    pareto
+    simulate 50
