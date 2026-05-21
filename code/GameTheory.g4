@@ -4,20 +4,31 @@ grammar GameTheory;
 
 program
     : GAME GAME_ID
-      PLAYERS PLAYER_ID COMMA PLAYER_ID
-      STRATEGIES strategy strategy
+      PLAYERS playerList
+      STRATEGIES strategyList
       PAYOFFS payoffList
       ANALYZE commandList
       EOF
     ;
 
-strategy
-    : PLAYER_ID COLON strategyList
+playerList
+    : PLAYER_ID COMMA PLAYER_ID
+    | PLAYER_ID
     ;
 
+
 strategyList
-    : STRATEGY_ID COMMA strategyList
-    | STRATEGY_ID
+    : strategy strategyList
+    | strategy
+    ;
+
+strategy
+    : PLAYER_ID COLON optionList
+    ;
+
+optionList
+    : OPTION_ID COMMA optionList
+    | OPTION_ID
     ;
 
 payoffList
@@ -26,7 +37,7 @@ payoffList
     ;
 
 payoff
-    : PLAYER_ID STRATEGY_ID COMMA PLAYER_ID STRATEGY_ID COLON NUMBER COMMA NUMBER
+    : PLAYER_ID OPTION_ID COMMA PLAYER_ID OPTION_ID COLON NUMBER COMMA NUMBER
     ;
 
 commandList
@@ -65,7 +76,7 @@ COLON  : ':'  ;
 // Tokens generales
 PLAYER_ID   : [A-Z]                     ;
 GAME_ID     : [A-Z][a-zA-Z0-9_]+        ;
-STRATEGY_ID : [a-z][a-zA-Z0-9_]*        ;
+OPTION_ID : [a-z][a-zA-Z0-9_]*        ;
 NUMBER     : '-'? [0-9]+ ('.' [0-9]+)? ;
 
 // Ignorados

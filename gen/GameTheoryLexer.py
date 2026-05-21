@@ -95,7 +95,7 @@ class GameTheoryLexer(Lexer):
     COLON = 13
     PLAYER_ID = 14
     GAME_ID = 15
-    STRATEGY_ID = 16
+    OPTION_ID = 16
     NUMBER = 17
     WS = 18
     COMMENT = 19
@@ -112,12 +112,12 @@ class GameTheoryLexer(Lexer):
     symbolicNames = [ "<INVALID>",
             "GAME", "PLAYERS", "STRATEGIES", "PAYOFFS", "ANALYZE", "NASH", 
             "DOMINANT", "PARETO", "MINIMAX", "MAXIMIN", "SIMULATE", "COMMA", 
-            "COLON", "PLAYER_ID", "GAME_ID", "STRATEGY_ID", "NUMBER", "WS", 
+            "COLON", "PLAYER_ID", "GAME_ID", "OPTION_ID", "NUMBER", "WS", 
             "COMMENT" ]
 
     ruleNames = [ "GAME", "PLAYERS", "STRATEGIES", "PAYOFFS", "ANALYZE", 
                   "NASH", "DOMINANT", "PARETO", "MINIMAX", "MAXIMIN", "SIMULATE", 
-                  "COMMA", "COLON", "PLAYER_ID", "GAME_ID", "STRATEGY_ID", 
+                  "COMMA", "COLON", "PLAYER_ID", "GAME_ID", "OPTION_ID", 
                   "NUMBER", "WS", "COMMENT" ]
 
     grammarFileName = "GameTheory.g4"

@@ -14,13 +14,23 @@ class GameTheoryVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GameTheoryParser#strategy.
-    def visitStrategy(self, ctx:GameTheoryParser.StrategyContext):
+    # Visit a parse tree produced by GameTheoryParser#playerList.
+    def visitPlayerList(self, ctx:GameTheoryParser.PlayerListContext):
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by GameTheoryParser#strategyList.
     def visitStrategyList(self, ctx:GameTheoryParser.StrategyListContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GameTheoryParser#strategy.
+    def visitStrategy(self, ctx:GameTheoryParser.StrategyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GameTheoryParser#optionList.
+    def visitOptionList(self, ctx:GameTheoryParser.OptionListContext):
         return self.visitChildren(ctx)
 
 

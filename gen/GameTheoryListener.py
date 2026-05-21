@@ -17,12 +17,12 @@ class GameTheoryListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GameTheoryParser#strategy.
-    def enterStrategy(self, ctx:GameTheoryParser.StrategyContext):
+    # Enter a parse tree produced by GameTheoryParser#playerList.
+    def enterPlayerList(self, ctx:GameTheoryParser.PlayerListContext):
         pass
 
-    # Exit a parse tree produced by GameTheoryParser#strategy.
-    def exitStrategy(self, ctx:GameTheoryParser.StrategyContext):
+    # Exit a parse tree produced by GameTheoryParser#playerList.
+    def exitPlayerList(self, ctx:GameTheoryParser.PlayerListContext):
         pass
 
 
@@ -32,6 +32,24 @@ class GameTheoryListener(ParseTreeListener):
 
     # Exit a parse tree produced by GameTheoryParser#strategyList.
     def exitStrategyList(self, ctx:GameTheoryParser.StrategyListContext):
+        pass
+
+
+    # Enter a parse tree produced by GameTheoryParser#strategy.
+    def enterStrategy(self, ctx:GameTheoryParser.StrategyContext):
+        pass
+
+    # Exit a parse tree produced by GameTheoryParser#strategy.
+    def exitStrategy(self, ctx:GameTheoryParser.StrategyContext):
+        pass
+
+
+    # Enter a parse tree produced by GameTheoryParser#optionList.
+    def enterOptionList(self, ctx:GameTheoryParser.OptionListContext):
+        pass
+
+    # Exit a parse tree produced by GameTheoryParser#optionList.
+    def exitOptionList(self, ctx:GameTheoryParser.OptionListContext):
         pass
 
 
