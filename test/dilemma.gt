@@ -1,0 +1,21 @@
+# dilemma.gt
+
+game PrisonersDilemma
+
+players A, B
+
+strategies
+    A: cooperate, defect
+    B: cooperate, defect
+
+payoffs
+    A cooperate, B cooperate : (3, 3)
+    A cooperate, B defect    : (0, 5)
+    A defect,    B cooperate : (5, 0)
+    A defect,    B defect    : (1, 1)
+
+analyze
+    nash()
+    dominant()
+    pareto()
+    simulate(rounds=50)
