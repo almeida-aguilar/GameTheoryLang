@@ -1,6 +1,6 @@
 # Archivo con errores intencionales para testear el driver
 
-game PrisonersDilemma   # ERROR 1: nombre del juego empieza en minúscula (debería ser GAME_ID)
+game prisonersDilemma   # ERROR 1: nombre del juego empieza en minúscula (debería ser GAME_ID)
 
 players A, B, C         # ERROR 2: tres jugadores, solo se permiten dos
 

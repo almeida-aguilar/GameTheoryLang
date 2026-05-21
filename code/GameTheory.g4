@@ -12,7 +12,7 @@ program
     ;
 
 playerList
-    : PLAYER_ID COMMA PLAYER_ID
+    : PLAYER_ID COMMA playerList
     | PLAYER_ID
     ;
 
