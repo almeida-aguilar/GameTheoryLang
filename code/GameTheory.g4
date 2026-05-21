@@ -37,7 +37,17 @@ payoffList
     ;
 
 payoff
-    : PLAYER_ID OPTION_ID COMMA PLAYER_ID OPTION_ID COLON NUMBER COMMA NUMBER
+    :  outcomeDesitionList COLON outcomeValueList
+    ;
+
+outcomeDesitionList
+    : PLAYER_ID OPTION_ID COMMA outcomeDesitionList
+    | PLAYER_ID OPTION_ID
+    ;
+
+outcomeValueList
+    : NUMBER COMMA outcomeValueList
+    | NUMBER
     ;
 
 commandList

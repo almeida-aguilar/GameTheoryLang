@@ -71,6 +71,24 @@ class GameTheoryListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GameTheoryParser#outcomeDesitionList.
+    def enterOutcomeDesitionList(self, ctx:GameTheoryParser.OutcomeDesitionListContext):
+        pass
+
+    # Exit a parse tree produced by GameTheoryParser#outcomeDesitionList.
+    def exitOutcomeDesitionList(self, ctx:GameTheoryParser.OutcomeDesitionListContext):
+        pass
+
+
+    # Enter a parse tree produced by GameTheoryParser#outcomeValueList.
+    def enterOutcomeValueList(self, ctx:GameTheoryParser.OutcomeValueListContext):
+        pass
+
+    # Exit a parse tree produced by GameTheoryParser#outcomeValueList.
+    def exitOutcomeValueList(self, ctx:GameTheoryParser.OutcomeValueListContext):
+        pass
+
+
     # Enter a parse tree produced by GameTheoryParser#commandList.
     def enterCommandList(self, ctx:GameTheoryParser.CommandListContext):
         pass

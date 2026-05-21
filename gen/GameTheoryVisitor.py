@@ -44,6 +44,16 @@ class GameTheoryVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GameTheoryParser#outcomeDesitionList.
+    def visitOutcomeDesitionList(self, ctx:GameTheoryParser.OutcomeDesitionListContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GameTheoryParser#outcomeValueList.
+    def visitOutcomeValueList(self, ctx:GameTheoryParser.OutcomeValueListContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by GameTheoryParser#commandList.
     def visitCommandList(self, ctx:GameTheoryParser.CommandListContext):
         return self.visitChildren(ctx)
