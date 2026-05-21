@@ -26,7 +26,7 @@ payoffList
     ;
 
 payoff
-    : PLAYER_ID STRATEGY_ID COMMA PLAYER_ID STRATEGY_ID COLON LPAREN INTEGER COMMA INTEGER RPAREN
+    : PLAYER_ID STRATEGY_ID COMMA PLAYER_ID STRATEGY_ID COLON LPAREN NUMBER COMMA NUMBER RPAREN
     ;
 
 commandList
@@ -40,7 +40,7 @@ command
     | PARETO   LPAREN RPAREN
     | MINIMAX  LPAREN RPAREN
     | MAXIMIN  LPAREN RPAREN
-    | SIMULATE LPAREN ROUNDS EQUAL NATURAL RPAREN
+    | SIMULATE LPAREN ROUNDS EQUAL NUMBER RPAREN
     ;
 
 // ===== Lexer =====
@@ -70,8 +70,7 @@ RPAREN : ')'  ;
 PLAYER_ID   : [A-Z]                     ;
 GAME_ID     : [A-Z][a-zA-Z0-9_]+        ;
 STRATEGY_ID : [a-z][a-zA-Z0-9_]*        ;
-NATURAL     : [0-9]+                    ;
-INTEGER     : '-'? [0-9]+ ('.' [0-9]+)? ;
+NUMBER     : '-'? [0-9]+ ('.' [0-9]+)? ;
 
 // Ignorados
 WS      : [ \t\r\n]+ -> skip ;

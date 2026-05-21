@@ -1,4 +1,4 @@
-# Generated from code/GameTheory.g4 by ANTLR 4.13.1
+# Generated from GameTheory.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,23,87,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,24,87,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,
         1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,3,2,38,8,2,1,3,1,3,1,3,1,3,3,3,44,
         8,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,5,1,5,1,5,
@@ -33,7 +33,7 @@ def serializedATN():
         67,68,5,16,0,0,68,85,5,17,0,0,69,70,5,8,0,0,70,71,5,16,0,0,71,85,
         5,17,0,0,72,73,5,9,0,0,73,74,5,16,0,0,74,85,5,17,0,0,75,76,5,10,
         0,0,76,77,5,16,0,0,77,85,5,17,0,0,78,79,5,11,0,0,79,80,5,16,0,0,
-        80,81,5,12,0,0,81,82,5,15,0,0,82,83,5,21,0,0,83,85,5,17,0,0,84,63,
+        80,81,5,12,0,0,81,82,5,15,0,0,82,83,5,22,0,0,83,85,5,17,0,0,84,63,
         1,0,0,0,84,66,1,0,0,0,84,69,1,0,0,0,84,72,1,0,0,0,84,75,1,0,0,0,
         84,78,1,0,0,0,85,13,1,0,0,0,4,37,43,61,84
     ]
@@ -57,7 +57,7 @@ class GameTheoryParser ( Parser ):
                       "ANALYZE", "NASH", "DOMINANT", "PARETO", "MINIMAX", 
                       "MAXIMIN", "SIMULATE", "ROUNDS", "COMMA", "COLON", 
                       "EQUAL", "LPAREN", "RPAREN", "PLAYER_ID", "GAME_ID", 
-                      "STRATEGY_ID", "NUMBER", "WS", "COMMENT" ]
+                      "STRATEGY_ID", "INTEGER", "NATURAL", "WS", "COMMENT" ]
 
     RULE_program = 0
     RULE_strategy = 1
@@ -91,9 +91,10 @@ class GameTheoryParser ( Parser ):
     PLAYER_ID=18
     GAME_ID=19
     STRATEGY_ID=20
-    NUMBER=21
-    WS=22
-    COMMENT=23
+    INTEGER=21
+    NATURAL=22
+    WS=23
+    COMMENT=24
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -445,11 +446,11 @@ class GameTheoryParser ( Parser ):
         def LPAREN(self):
             return self.getToken(GameTheoryParser.LPAREN, 0)
 
-        def NUMBER(self, i:int=None):
+        def INTEGER(self, i:int=None):
             if i is None:
-                return self.getTokens(GameTheoryParser.NUMBER)
+                return self.getTokens(GameTheoryParser.INTEGER)
             else:
-                return self.getToken(GameTheoryParser.NUMBER, i)
+                return self.getToken(GameTheoryParser.INTEGER, i)
 
         def RPAREN(self):
             return self.getToken(GameTheoryParser.RPAREN, 0)
@@ -495,11 +496,11 @@ class GameTheoryParser ( Parser ):
             self.state = 51
             self.match(GameTheoryParser.LPAREN)
             self.state = 52
-            self.match(GameTheoryParser.NUMBER)
+            self.match(GameTheoryParser.INTEGER)
             self.state = 53
             self.match(GameTheoryParser.COMMA)
             self.state = 54
-            self.match(GameTheoryParser.NUMBER)
+            self.match(GameTheoryParser.INTEGER)
             self.state = 55
             self.match(GameTheoryParser.RPAREN)
         except RecognitionException as re:
@@ -614,8 +615,8 @@ class GameTheoryParser ( Parser ):
         def EQUAL(self):
             return self.getToken(GameTheoryParser.EQUAL, 0)
 
-        def NUMBER(self):
-            return self.getToken(GameTheoryParser.NUMBER, 0)
+        def NATURAL(self):
+            return self.getToken(GameTheoryParser.NATURAL, 0)
 
         def getRuleIndex(self):
             return GameTheoryParser.RULE_command
@@ -701,7 +702,7 @@ class GameTheoryParser ( Parser ):
                 self.state = 81
                 self.match(GameTheoryParser.EQUAL)
                 self.state = 82
-                self.match(GameTheoryParser.NUMBER)
+                self.match(GameTheoryParser.NATURAL)
                 self.state = 83
                 self.match(GameTheoryParser.RPAREN)
                 pass
