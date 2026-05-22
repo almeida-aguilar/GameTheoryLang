@@ -37,11 +37,11 @@ payoffList
     ;
 
 payoff
-    :  outcomeDesitionList COLON outcomeValueList
+    :  outcomeDecisionList COLON outcomeValueList
     ;
 
-outcomeDesitionList
-    : PLAYER_ID OPTION_ID COMMA outcomeDesitionList
+outcomeDecisionList
+    : PLAYER_ID OPTION_ID COMMA outcomeDecisionList
     | PLAYER_ID OPTION_ID
     ;
 
